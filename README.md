@@ -1,16 +1,109 @@
-# React + Vite
+# DevConnect - Developer Portfolio Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio builder for developers with real-time preview and multiple themes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✨ **Real-time Preview** - See changes instantly as you edit
+- 🎨 **Multiple Themes** - Modern, Minimal, and Creative themes
+- 🎯 **Customizable Colors** - Choose from preset color schemes
+- 📱 **Fully Responsive** - Works on all devices
+- 📥 **Export to HTML** - Download your portfolio as a single HTML file
+- 🚀 **Easy Deployment** - Ready to deploy on Netlify, Vercel, or any static host
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** - UI library
+- **Vite** - Build tool
+- **Context API** - State management
+- **CSS3** - Styling (no external CSS frameworks)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 16+ installed
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd devconnect
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start development server
+```bash
+npm run dev
+```
+
+4. Open your browser at `http://localhost:3000`
+
+## Usage
+
+1. **Edit Your Information** - Use the left sidebar to navigate between sections
+2. **Preview in Real-time** - See your changes instantly in the preview panel
+3. **Customize Theme** - Choose from Modern, Minimal, or Creative themes
+4. **Select Colors** - Pick a color scheme that matches your style
+5. **Export** - Click "Export Portfolio" to download your HTML file
+
+## Building for Production
+```bash
+npm run build
+```
+
+The build output will be in the `dist` folder.
+
+## Deployment
+
+### Netlify
+
+1. Push your code to GitHub
+2. Connect your repository to Netlify
+3. Build command: `npm run build`
+4. Publish directory: `dist`
+
+### Vercel
+
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. Framework preset: Vite
+4. Build command: `npm run build`
+5. Output directory: `dist`
+
+## Project Structure
+```
+src/
+├── components/          # React components
+│   ├── Editor/         # Editor form components
+│   ├── Preview/        # Preview and theme components
+│   ├── Layout/         # Layout components
+│   └── Export/         # Export functionality
+├── context/            # React Context for state management
+├── utils/              # Utility functions
+├── styles/             # CSS files
+├── App.jsx             # Main App component
+└── main.jsx            # Entry point
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License - feel free to use this project for personal or commercial purposes.
+
+## Support
+
+If you encounter any issues or have questions, please open an issue on GitHub.
+
+---
+
+Built with ❤️ for the developer community
